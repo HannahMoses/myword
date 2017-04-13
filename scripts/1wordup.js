@@ -26,9 +26,7 @@ var model = {
  * Resets the model to a starting state, and then starts the timer
  */
 function startGame() {
-    myVar = setInterval(alertFunc, 2000, "First param", "Second param");
     endGame();
-    // var ng= document.GetById("ngbutton");
     model.gameHasStarted = true;
     model.secondsRemaining = GAME_DURATION;
     model.allowedLetters = generateAllowedLetters();
@@ -117,9 +115,6 @@ function render() {
 
     // TODO 2
     // Update the curent time remaining on the scoreboard.
-    // $("#time-remaining").text(currentTime());
-    var myVar;
-
 
 
     // if the game has not started yet, just hide the #game container and exit
