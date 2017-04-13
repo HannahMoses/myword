@@ -116,7 +116,7 @@ function render() {
     // TODO 2
     // Update the curent time remaining on the scoreboard.
 
-
+                $("#time-remaining").text(model.secondsRemaining);
     // if the game has not started yet, just hide the #game container and exit
     if (model.gameHasStarted == false) {
         $("#game").hide();
@@ -232,7 +232,7 @@ function disallowedLetterChip(letter) {
 
 $(document).ready(function() {
     // when the new game button is clicked
-    $("#new-game-button").click(function() {
+    $("#ngbutton").click(function() {
         // start the game and re-render
         startGame();
         render();
